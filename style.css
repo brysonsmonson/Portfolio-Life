@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  font-size: larger;
+  background: black;
+  color: cyan;
+}
+
+/* classes for navigation bar
+*/
+
+nav {
+  display: flex;
+  background-color: purple;
+}
+
+nav a {
+  color: rgb(166, 255, 0);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* structure of page here
+*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+display {
+  flex: 1;
+  background-color: rgb(139, 139, 255);
+  padding: 40px;
+  text-align: center;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-style: oblique;
+  background: darkgray;
+  color: #fff;
+}
+
+/* 
+Align pictures
+*/
+
+.picture {
+  flex: 4;
+  background-color: tan;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 
+Size adjustemts for seperate screens
+*/
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
